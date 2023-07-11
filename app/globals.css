@@ -8,6 +8,9 @@
     --background-end-rgb: 255, 255, 255; */
     --primary: hsl(235, 11%, 23%);
     --secondary: hsl(240, 15%, 94%);
+    --light-gray: hsl(236, 10%, 28%);
+    --input-height: 48;
+    --diameter: 48;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,4 +28,24 @@ body {
             rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
     background: var(--primary);
     color: var(--secondary);
+}
+
+.input {
+    background-color: var(--light-gray);
+    outline-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 0px 15px 0px;
+}
+
+.input:focus-visible {
+    /* outline-color: transparent; */
+    outline-width: 0;
+}
+
+.send {
+    width: 20px;
+    height: 20px;
+    /* top: calc(50% - var(--diameter)/2); */
+    top: 25px;
+    right: 12px;
+    /* color: #6b6c7b; */
 }
