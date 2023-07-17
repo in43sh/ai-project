@@ -62,8 +62,8 @@ export default function Home() {
   };
 
   return (
-    <main className="h-screen">
-      <div className="textarea p-3">
+    <main className="flex flex-col items-center h-screen">
+      <div className="flex flex-col w-full lg:w-9/12 textarea p-3">
         {conversation.map((item, index) => (
           <React.Fragment key={index}>
             <br />
@@ -87,8 +87,8 @@ export default function Home() {
           </React.Fragment>
         ))}
       </div>
-      <div className="bottom-0 w-full">
-        <div className="sticky bottom flex flex-col mx-3 py-3">
+      <div className="flex justify-center w-full bottom-0">
+        <div className="sticky bottom flex flex-col w-full lg:w-9/12 mx-3 py-3">
           <input
             className="input p-3 rounded-xl"
             placeholder="Enter your message"
